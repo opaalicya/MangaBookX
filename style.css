@@ -1,1 +1,11 @@
+:root {
+    --branco-principal: rgb(0, 0, 0);
+    --cor-de-fundo: rgb(255, 239, 209);
+}
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
 
