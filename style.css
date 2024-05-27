@@ -1,11 +1,67 @@
 :root {
-    --branco-principal: rgb(0, 0, 0);
-    --cor-de-fundo: rgb(255, 239, 209);
+    --branco-principal: rgb(30, 70, 71);
+    --cinza-secundario: rgb(36, 94, 104);
+    --botao-azul: rgb(241, 185, 0);
+    --cor-de-fundo: rgb(66, 66, 66);
+    --fonte-principal: 'inter';
+
 }
 
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: ver(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+
 }
 
+ * {
+    margin: 0px;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(fundo.png);
+    background-repeat: no-repeat;;
+    background-size: contain;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_botao {
+ background-color: var(--botao-azul);
+ border-radius: 5px;
+ padding: 1em;
+ color: var(--branco-principal);
+ display: block;
+ text-decoration: none;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container_titilo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container_imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa {
+    margin: 0 6em;
+}
